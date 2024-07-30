@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyMedicineDetailActivity">
+
+    <TextView
+        android:id="@+id/textViewBMDName"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="HealthMate"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBMDSubName"
+        android:layout_width="235dp"
+        android:layout_height="27dp"
+        android:text="HealthCare at Your FingerTips"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDName" />
+
+    <TextView
+        android:id="@+id/textViewBMDBuyMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Buy Medicine"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDSubName" />
+
+    <EditText
+        android:id="@+id/editTextBMDMultiLine"
+        android:layout_width="358dp"
+        android:layout_height="376dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/lightgray"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:text="Hi \nHello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDBuyMedicine" />
+
+    <TextView
+        android:id="@+id/textViewBMDTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBMDMultiLine" />
+
+    <Button
+        android:id="@+id/buttonBMDAddtoCart"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="52dp"
+        android:text="Add to Cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDTotalCost" />
+
+    <Button
+        android:id="@+id/buttonBMDBack"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="52dp"
+        android:text="BACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDTotalCost" />
+</androidx.constraintlayout.widget.ConstraintLayout>
